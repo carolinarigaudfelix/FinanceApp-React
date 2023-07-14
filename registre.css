@@ -1,0 +1,78 @@
+@import url(variables.css);
+@import url(typography.css);
+
+body{
+    background-color: white;
+}
+
+.Registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registerTitle{
+    color: var(--g-100);
+    margin-top: 106px;
+    margin-bottom: 24px;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.registerForm input {
+    width: 288px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color:#F5F5F5;
+    border-radius: 8px;
+}
+
+#submit{
+    background-color: var(--g-100);
+    margin-top: 32px;
+    border-radius: 8px;
+    color: white;
+}
+
+.registerForm label{
+    color: black;
+}
+
+::placeholder{
+    font-weight: normal;
+}
+
+.registerForm input:focus{
+    border: none;
+    text-decoration: none;
+}
+
+.backButton button {
+    background:none;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+
+
+  
+  
+  
+  
+  

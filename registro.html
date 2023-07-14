@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>financeApp</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="imageContainer">
+        <img src="media/manage-money-animate.svg" />
+      </div>
+
+      <div class="loginContainer">
+        <form class="loginForm">
+          <div>
+            <label for="username">Usuário</label>
+            <input type="text" id="username" required />
+          </div>
+          <div>
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="email" required />
+          </div>
+          <div>
+            <label for="password">Senha</label>
+            <input type="password" id="password" required />
+          </div>
+          <div>
+            <label for="confirm">Confirmar Senha</label>
+            <input type="confirm" id="confirm" required />
+          </div>
+
+          <div class="form__actions">
+            <button type="submit"  onclick="redireciona()">Entrar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script>
+        function redireciona() {
+          window.location.href = "index.html";
+        }
+    </script>
+  </body>
+</html>

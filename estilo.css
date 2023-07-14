@@ -1,0 +1,104 @@
+@import url(variables.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  padding: 2rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.wrapper > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100%;
+
+}
+
+.wrapper > .imageContainer {
+  @media screen and (max-width: 768px) {
+    height: fit-content !important;
+    margin-bottom: 2rem;
+  }
+}
+
+.wrapper > .imageContainer > img {
+  width: 450px;
+
+  @media screen and (max-width: 768px) {
+    width: 150px;
+  }
+}
+
+.loginForm {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.loginForm > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.loginForm label,
+.loginForm input {
+  margin: 0;
+}
+
+.loginForm label {
+  font-weight: 400;
+}
+
+.loginForm input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid #ccc;
+}
+
+.form__actions {
+  margin-top: 0.75rem;
+}
+
+.form__actions button {
+  background-color: var(--g-100);
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-weight: bold;
+
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.form__actions p {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+}
